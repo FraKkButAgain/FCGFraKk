@@ -1,8 +1,31 @@
-Esse Trabalho foi feito por Frank Vega,
-após muitas lagrimas e sofrimento eu consegui aprender o suficiente pra entregar as questões... não perfeitamente, mas bom o suficiente :D
+# Nome do Projeto
 
-honestamente foi bem dificil estudar pra isso lol eu tive bastante dificuldade, tanto que todos os meus codigos estão basicamente "colados com fita adesiva"
+Trabalho desenvolvido para a disciplina **Algoritmos e Programação: Fundamentos**.
 
+## 👥 Integrantes do Grupo
 
-pra ser completamente honesto aqui, tem umas anotações meio confusas no codigo mas é pq eu copiei e colei varias partes dos recursos que tu disponibilizou e de programas que achei online, mas a logica em si eu que fiz baseado em tutoriais e livros.
-também utilizei AI um pouco, n sei se isso ta banido ou n mas tinha umas horas que eu genuinamente n sabia oq tava dando errado no meu codigo, se quiser discontar nota por isso eu entendo mas serio foi uma luta pra fazer isso tudo funcionar... e nem ficou tão bom haha.
+- Frank Vega
+- Frederico Prado Chaves
+- Gabriel de Sá
+
+## 🚀 Como executar 
+
+Exemplo:
+> Este programa foi feito em **linguagem C++** e pode ser compilado em uma IDE como o **VS Code** (com compilador instalado).
+> No seu computador (VS Code ou outro editor):
+> 1. Compile o código (por exemplo, com o comando: `gcc arquivo.c -o programa`)
+> 2. Execute com: `./programa`
+
+## 💡 Sobre o Programa
+
+Descreva brevemente o que o programa faz. Exemplo:
+> O programa cria um grid de cubos vazio e deixa o usuario criar cubos dentro :D
+> utilize 0-9 para trocar as texturas, o texto (utilizando freetype) lhe dira qual textura voce esta usando
+> utilize espaço para colocar, delete para deletar, pg up e pg down para trocar de layer
+ 
+
+## 📌 Observações
+
+Exemplo:
+> - O código está no arquivo `Grau_B`
+> - Não é necessário instalar bibliotecas e
