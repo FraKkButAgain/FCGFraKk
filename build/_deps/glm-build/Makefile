@@ -56,13 +56,33 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk
+CMAKE_SOURCE_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build
+CMAKE_BINARY_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk\build
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/pichau/Documents/GitHub/FCGFraKk/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -86,7 +106,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -131,21 +151,21 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build\CMakeFiles C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build\_deps\glm-build\\CMakeFiles\progress.marks
-	cd /d C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/glm-build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build\CMakeFiles 0
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glm-build\\CMakeFiles\progress.marks
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/glm-build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	cd /d C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build\CMakeFiles C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build\_deps\glm-build\\CMakeFiles\progress.marks
-	cd /d C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/glm-build/codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build\CMakeFiles 0
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glm-build\\CMakeFiles\progress.marks
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/glm-build/codegen
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
 clean:
-	cd /d C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/glm-build/clean
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/glm-build/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,17 +174,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/glm-build/preinstall
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/glm-build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/glm-build/preinstall
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/glm-build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -179,6 +199,8 @@ help:
 	@echo ... install/local
 	@echo ... install/strip
 	@echo ... list_install_components
+	@echo ... package
+	@echo ... package_source
 	@echo ... rebuild_cache
 .PHONY : help
 
@@ -191,6 +213,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -56,13 +56,33 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk
+CMAKE_SOURCE_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build
+CMAKE_BINARY_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk\build
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/pichau/Documents/GitHub/FCGFraKk/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -86,7 +106,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -131,16 +151,16 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build\CMakeFiles C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles C:\Users\pichau\Documents\GitHub\FCGFraKk\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build\CMakeFiles C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles C:\Users\pichau\Documents\GitHub\FCGFraKk\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\FraKk\Documents\Fundamentos_de_computacao\FCGFraKk\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
@@ -181,147 +201,17 @@ test/fast:
 .PHONY : test/fast
 
 #=============================================================================
-# Target rules for targets named ex6-a
+# Target rules for targets named Grau_B
 
 # Build rule for target.
-ex6-a: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex6-a
-.PHONY : ex6-a
+Grau_B: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Grau_B
+.PHONY : Grau_B
 
 # fast build rule for target.
-ex6-a/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-a.dir\build.make CMakeFiles/ex6-a.dir/build
-.PHONY : ex6-a/fast
-
-#=============================================================================
-# Target rules for targets named ex6-b
-
-# Build rule for target.
-ex6-b: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex6-b
-.PHONY : ex6-b
-
-# fast build rule for target.
-ex6-b/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-b.dir\build.make CMakeFiles/ex6-b.dir/build
-.PHONY : ex6-b/fast
-
-#=============================================================================
-# Target rules for targets named ex6-c
-
-# Build rule for target.
-ex6-c: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex6-c
-.PHONY : ex6-c
-
-# fast build rule for target.
-ex6-c/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-c.dir\build.make CMakeFiles/ex6-c.dir/build
-.PHONY : ex6-c/fast
-
-#=============================================================================
-# Target rules for targets named ex6-d
-
-# Build rule for target.
-ex6-d: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex6-d
-.PHONY : ex6-d
-
-# fast build rule for target.
-ex6-d/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-d.dir\build.make CMakeFiles/ex6-d.dir/build
-.PHONY : ex6-d/fast
-
-#=============================================================================
-# Target rules for targets named ex7-a
-
-# Build rule for target.
-ex7-a: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex7-a
-.PHONY : ex7-a
-
-# fast build rule for target.
-ex7-a/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-a.dir\build.make CMakeFiles/ex7-a.dir/build
-.PHONY : ex7-a/fast
-
-#=============================================================================
-# Target rules for targets named ex7-b
-
-# Build rule for target.
-ex7-b: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex7-b
-.PHONY : ex7-b
-
-# fast build rule for target.
-ex7-b/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-b.dir\build.make CMakeFiles/ex7-b.dir/build
-.PHONY : ex7-b/fast
-
-#=============================================================================
-# Target rules for targets named ex7-c
-
-# Build rule for target.
-ex7-c: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex7-c
-.PHONY : ex7-c
-
-# fast build rule for target.
-ex7-c/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-c.dir\build.make CMakeFiles/ex7-c.dir/build
-.PHONY : ex7-c/fast
-
-#=============================================================================
-# Target rules for targets named ex7-d
-
-# Build rule for target.
-ex7-d: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex7-d
-.PHONY : ex7-d
-
-# fast build rule for target.
-ex7-d/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-d.dir\build.make CMakeFiles/ex7-d.dir/build
-.PHONY : ex7-d/fast
-
-#=============================================================================
-# Target rules for targets named ex8
-
-# Build rule for target.
-ex8: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex8
-.PHONY : ex8
-
-# fast build rule for target.
-ex8/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex8.dir\build.make CMakeFiles/ex8.dir/build
-.PHONY : ex8/fast
-
-#=============================================================================
-# Target rules for targets named ex9
-
-# Build rule for target.
-ex9: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex9
-.PHONY : ex9
-
-# fast build rule for target.
-ex9/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex9.dir\build.make CMakeFiles/ex9.dir/build
-.PHONY : ex9/fast
-
-#=============================================================================
-# Target rules for targets named ex10
-
-# Build rule for target.
-ex10: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex10
-.PHONY : ex10
-
-# fast build rule for target.
-ex10/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex10.dir\build.make CMakeFiles/ex10.dir/build
-.PHONY : ex10/fast
+Grau_B/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grau_B.dir\build.make CMakeFiles/Grau_B.dir/build
+.PHONY : Grau_B/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -363,6 +253,19 @@ update_mappings/fast:
 .PHONY : update_mappings/fast
 
 #=============================================================================
+# Target rules for targets named freetype
+
+# Build rule for target.
+freetype: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 freetype
+.PHONY : freetype
+
+# fast build rule for target.
+freetype/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/build
+.PHONY : freetype/fast
+
+#=============================================================================
 # Target rules for targets named glm
 
 # Build rule for target.
@@ -381,17 +284,7 @@ common/glad.obj: common/glad.c.obj
 # target to build an object file
 common/glad.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/common/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-a.dir\build.make CMakeFiles/ex6-a.dir/common/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-b.dir\build.make CMakeFiles/ex6-b.dir/common/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-c.dir\build.make CMakeFiles/ex6-c.dir/common/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-d.dir\build.make CMakeFiles/ex6-d.dir/common/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-a.dir\build.make CMakeFiles/ex7-a.dir/common/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-b.dir\build.make CMakeFiles/ex7-b.dir/common/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-c.dir\build.make CMakeFiles/ex7-c.dir/common/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-d.dir\build.make CMakeFiles/ex7-d.dir/common/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex8.dir\build.make CMakeFiles/ex8.dir/common/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex9.dir\build.make CMakeFiles/ex9.dir/common/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex10.dir\build.make CMakeFiles/ex10.dir/common/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grau_B.dir\build.make CMakeFiles/Grau_B.dir/common/glad.c.obj
 .PHONY : common/glad.c.obj
 
 common/glad.i: common/glad.c.i
@@ -400,17 +293,7 @@ common/glad.i: common/glad.c.i
 # target to preprocess a source file
 common/glad.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/common/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-a.dir\build.make CMakeFiles/ex6-a.dir/common/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-b.dir\build.make CMakeFiles/ex6-b.dir/common/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-c.dir\build.make CMakeFiles/ex6-c.dir/common/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-d.dir\build.make CMakeFiles/ex6-d.dir/common/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-a.dir\build.make CMakeFiles/ex7-a.dir/common/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-b.dir\build.make CMakeFiles/ex7-b.dir/common/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-c.dir\build.make CMakeFiles/ex7-c.dir/common/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-d.dir\build.make CMakeFiles/ex7-d.dir/common/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex8.dir\build.make CMakeFiles/ex8.dir/common/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex9.dir\build.make CMakeFiles/ex9.dir/common/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex10.dir\build.make CMakeFiles/ex10.dir/common/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grau_B.dir\build.make CMakeFiles/Grau_B.dir/common/glad.c.i
 .PHONY : common/glad.c.i
 
 common/glad.s: common/glad.c.s
@@ -419,282 +302,32 @@ common/glad.s: common/glad.c.s
 # target to generate assembly for a file
 common/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/common/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-a.dir\build.make CMakeFiles/ex6-a.dir/common/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-b.dir\build.make CMakeFiles/ex6-b.dir/common/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-c.dir\build.make CMakeFiles/ex6-c.dir/common/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-d.dir\build.make CMakeFiles/ex6-d.dir/common/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-a.dir\build.make CMakeFiles/ex7-a.dir/common/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-b.dir\build.make CMakeFiles/ex7-b.dir/common/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-c.dir\build.make CMakeFiles/ex7-c.dir/common/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-d.dir\build.make CMakeFiles/ex7-d.dir/common/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex8.dir\build.make CMakeFiles/ex8.dir/common/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex9.dir\build.make CMakeFiles/ex9.dir/common/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex10.dir\build.make CMakeFiles/ex10.dir/common/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grau_B.dir\build.make CMakeFiles/Grau_B.dir/common/glad.c.s
 .PHONY : common/glad.c.s
 
-src/lista1/ex10.obj: src/lista1/ex10.cpp.obj
-.PHONY : src/lista1/ex10.obj
+src/Grau_B.obj: src/Grau_B.cpp.obj
+.PHONY : src/Grau_B.obj
 
 # target to build an object file
-src/lista1/ex10.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex10.dir\build.make CMakeFiles/ex10.dir/src/lista1/ex10.cpp.obj
-.PHONY : src/lista1/ex10.cpp.obj
+src/Grau_B.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grau_B.dir\build.make CMakeFiles/Grau_B.dir/src/Grau_B.cpp.obj
+.PHONY : src/Grau_B.cpp.obj
 
-src/lista1/ex10.i: src/lista1/ex10.cpp.i
-.PHONY : src/lista1/ex10.i
-
-# target to preprocess a source file
-src/lista1/ex10.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex10.dir\build.make CMakeFiles/ex10.dir/src/lista1/ex10.cpp.i
-.PHONY : src/lista1/ex10.cpp.i
-
-src/lista1/ex10.s: src/lista1/ex10.cpp.s
-.PHONY : src/lista1/ex10.s
-
-# target to generate assembly for a file
-src/lista1/ex10.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex10.dir\build.make CMakeFiles/ex10.dir/src/lista1/ex10.cpp.s
-.PHONY : src/lista1/ex10.cpp.s
-
-src/lista1/ex6-a.obj: src/lista1/ex6-a.cpp.obj
-.PHONY : src/lista1/ex6-a.obj
-
-# target to build an object file
-src/lista1/ex6-a.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-a.dir\build.make CMakeFiles/ex6-a.dir/src/lista1/ex6-a.cpp.obj
-.PHONY : src/lista1/ex6-a.cpp.obj
-
-src/lista1/ex6-a.i: src/lista1/ex6-a.cpp.i
-.PHONY : src/lista1/ex6-a.i
+src/Grau_B.i: src/Grau_B.cpp.i
+.PHONY : src/Grau_B.i
 
 # target to preprocess a source file
-src/lista1/ex6-a.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-a.dir\build.make CMakeFiles/ex6-a.dir/src/lista1/ex6-a.cpp.i
-.PHONY : src/lista1/ex6-a.cpp.i
+src/Grau_B.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grau_B.dir\build.make CMakeFiles/Grau_B.dir/src/Grau_B.cpp.i
+.PHONY : src/Grau_B.cpp.i
 
-src/lista1/ex6-a.s: src/lista1/ex6-a.cpp.s
-.PHONY : src/lista1/ex6-a.s
-
-# target to generate assembly for a file
-src/lista1/ex6-a.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-a.dir\build.make CMakeFiles/ex6-a.dir/src/lista1/ex6-a.cpp.s
-.PHONY : src/lista1/ex6-a.cpp.s
-
-src/lista1/ex6-b.obj: src/lista1/ex6-b.cpp.obj
-.PHONY : src/lista1/ex6-b.obj
-
-# target to build an object file
-src/lista1/ex6-b.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-b.dir\build.make CMakeFiles/ex6-b.dir/src/lista1/ex6-b.cpp.obj
-.PHONY : src/lista1/ex6-b.cpp.obj
-
-src/lista1/ex6-b.i: src/lista1/ex6-b.cpp.i
-.PHONY : src/lista1/ex6-b.i
-
-# target to preprocess a source file
-src/lista1/ex6-b.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-b.dir\build.make CMakeFiles/ex6-b.dir/src/lista1/ex6-b.cpp.i
-.PHONY : src/lista1/ex6-b.cpp.i
-
-src/lista1/ex6-b.s: src/lista1/ex6-b.cpp.s
-.PHONY : src/lista1/ex6-b.s
+src/Grau_B.s: src/Grau_B.cpp.s
+.PHONY : src/Grau_B.s
 
 # target to generate assembly for a file
-src/lista1/ex6-b.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-b.dir\build.make CMakeFiles/ex6-b.dir/src/lista1/ex6-b.cpp.s
-.PHONY : src/lista1/ex6-b.cpp.s
-
-src/lista1/ex6-c.obj: src/lista1/ex6-c.cpp.obj
-.PHONY : src/lista1/ex6-c.obj
-
-# target to build an object file
-src/lista1/ex6-c.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-c.dir\build.make CMakeFiles/ex6-c.dir/src/lista1/ex6-c.cpp.obj
-.PHONY : src/lista1/ex6-c.cpp.obj
-
-src/lista1/ex6-c.i: src/lista1/ex6-c.cpp.i
-.PHONY : src/lista1/ex6-c.i
-
-# target to preprocess a source file
-src/lista1/ex6-c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-c.dir\build.make CMakeFiles/ex6-c.dir/src/lista1/ex6-c.cpp.i
-.PHONY : src/lista1/ex6-c.cpp.i
-
-src/lista1/ex6-c.s: src/lista1/ex6-c.cpp.s
-.PHONY : src/lista1/ex6-c.s
-
-# target to generate assembly for a file
-src/lista1/ex6-c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-c.dir\build.make CMakeFiles/ex6-c.dir/src/lista1/ex6-c.cpp.s
-.PHONY : src/lista1/ex6-c.cpp.s
-
-src/lista1/ex6-d.obj: src/lista1/ex6-d.cpp.obj
-.PHONY : src/lista1/ex6-d.obj
-
-# target to build an object file
-src/lista1/ex6-d.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-d.dir\build.make CMakeFiles/ex6-d.dir/src/lista1/ex6-d.cpp.obj
-.PHONY : src/lista1/ex6-d.cpp.obj
-
-src/lista1/ex6-d.i: src/lista1/ex6-d.cpp.i
-.PHONY : src/lista1/ex6-d.i
-
-# target to preprocess a source file
-src/lista1/ex6-d.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-d.dir\build.make CMakeFiles/ex6-d.dir/src/lista1/ex6-d.cpp.i
-.PHONY : src/lista1/ex6-d.cpp.i
-
-src/lista1/ex6-d.s: src/lista1/ex6-d.cpp.s
-.PHONY : src/lista1/ex6-d.s
-
-# target to generate assembly for a file
-src/lista1/ex6-d.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex6-d.dir\build.make CMakeFiles/ex6-d.dir/src/lista1/ex6-d.cpp.s
-.PHONY : src/lista1/ex6-d.cpp.s
-
-src/lista1/ex7-a.obj: src/lista1/ex7-a.cpp.obj
-.PHONY : src/lista1/ex7-a.obj
-
-# target to build an object file
-src/lista1/ex7-a.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-a.dir\build.make CMakeFiles/ex7-a.dir/src/lista1/ex7-a.cpp.obj
-.PHONY : src/lista1/ex7-a.cpp.obj
-
-src/lista1/ex7-a.i: src/lista1/ex7-a.cpp.i
-.PHONY : src/lista1/ex7-a.i
-
-# target to preprocess a source file
-src/lista1/ex7-a.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-a.dir\build.make CMakeFiles/ex7-a.dir/src/lista1/ex7-a.cpp.i
-.PHONY : src/lista1/ex7-a.cpp.i
-
-src/lista1/ex7-a.s: src/lista1/ex7-a.cpp.s
-.PHONY : src/lista1/ex7-a.s
-
-# target to generate assembly for a file
-src/lista1/ex7-a.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-a.dir\build.make CMakeFiles/ex7-a.dir/src/lista1/ex7-a.cpp.s
-.PHONY : src/lista1/ex7-a.cpp.s
-
-src/lista1/ex7-b.obj: src/lista1/ex7-b.cpp.obj
-.PHONY : src/lista1/ex7-b.obj
-
-# target to build an object file
-src/lista1/ex7-b.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-b.dir\build.make CMakeFiles/ex7-b.dir/src/lista1/ex7-b.cpp.obj
-.PHONY : src/lista1/ex7-b.cpp.obj
-
-src/lista1/ex7-b.i: src/lista1/ex7-b.cpp.i
-.PHONY : src/lista1/ex7-b.i
-
-# target to preprocess a source file
-src/lista1/ex7-b.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-b.dir\build.make CMakeFiles/ex7-b.dir/src/lista1/ex7-b.cpp.i
-.PHONY : src/lista1/ex7-b.cpp.i
-
-src/lista1/ex7-b.s: src/lista1/ex7-b.cpp.s
-.PHONY : src/lista1/ex7-b.s
-
-# target to generate assembly for a file
-src/lista1/ex7-b.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-b.dir\build.make CMakeFiles/ex7-b.dir/src/lista1/ex7-b.cpp.s
-.PHONY : src/lista1/ex7-b.cpp.s
-
-src/lista1/ex7-c.obj: src/lista1/ex7-c.cpp.obj
-.PHONY : src/lista1/ex7-c.obj
-
-# target to build an object file
-src/lista1/ex7-c.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-c.dir\build.make CMakeFiles/ex7-c.dir/src/lista1/ex7-c.cpp.obj
-.PHONY : src/lista1/ex7-c.cpp.obj
-
-src/lista1/ex7-c.i: src/lista1/ex7-c.cpp.i
-.PHONY : src/lista1/ex7-c.i
-
-# target to preprocess a source file
-src/lista1/ex7-c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-c.dir\build.make CMakeFiles/ex7-c.dir/src/lista1/ex7-c.cpp.i
-.PHONY : src/lista1/ex7-c.cpp.i
-
-src/lista1/ex7-c.s: src/lista1/ex7-c.cpp.s
-.PHONY : src/lista1/ex7-c.s
-
-# target to generate assembly for a file
-src/lista1/ex7-c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-c.dir\build.make CMakeFiles/ex7-c.dir/src/lista1/ex7-c.cpp.s
-.PHONY : src/lista1/ex7-c.cpp.s
-
-src/lista1/ex7-d.obj: src/lista1/ex7-d.cpp.obj
-.PHONY : src/lista1/ex7-d.obj
-
-# target to build an object file
-src/lista1/ex7-d.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-d.dir\build.make CMakeFiles/ex7-d.dir/src/lista1/ex7-d.cpp.obj
-.PHONY : src/lista1/ex7-d.cpp.obj
-
-src/lista1/ex7-d.i: src/lista1/ex7-d.cpp.i
-.PHONY : src/lista1/ex7-d.i
-
-# target to preprocess a source file
-src/lista1/ex7-d.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-d.dir\build.make CMakeFiles/ex7-d.dir/src/lista1/ex7-d.cpp.i
-.PHONY : src/lista1/ex7-d.cpp.i
-
-src/lista1/ex7-d.s: src/lista1/ex7-d.cpp.s
-.PHONY : src/lista1/ex7-d.s
-
-# target to generate assembly for a file
-src/lista1/ex7-d.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex7-d.dir\build.make CMakeFiles/ex7-d.dir/src/lista1/ex7-d.cpp.s
-.PHONY : src/lista1/ex7-d.cpp.s
-
-src/lista1/ex8.obj: src/lista1/ex8.cpp.obj
-.PHONY : src/lista1/ex8.obj
-
-# target to build an object file
-src/lista1/ex8.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex8.dir\build.make CMakeFiles/ex8.dir/src/lista1/ex8.cpp.obj
-.PHONY : src/lista1/ex8.cpp.obj
-
-src/lista1/ex8.i: src/lista1/ex8.cpp.i
-.PHONY : src/lista1/ex8.i
-
-# target to preprocess a source file
-src/lista1/ex8.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex8.dir\build.make CMakeFiles/ex8.dir/src/lista1/ex8.cpp.i
-.PHONY : src/lista1/ex8.cpp.i
-
-src/lista1/ex8.s: src/lista1/ex8.cpp.s
-.PHONY : src/lista1/ex8.s
-
-# target to generate assembly for a file
-src/lista1/ex8.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex8.dir\build.make CMakeFiles/ex8.dir/src/lista1/ex8.cpp.s
-.PHONY : src/lista1/ex8.cpp.s
-
-src/lista1/ex9.obj: src/lista1/ex9.cpp.obj
-.PHONY : src/lista1/ex9.obj
-
-# target to build an object file
-src/lista1/ex9.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex9.dir\build.make CMakeFiles/ex9.dir/src/lista1/ex9.cpp.obj
-.PHONY : src/lista1/ex9.cpp.obj
-
-src/lista1/ex9.i: src/lista1/ex9.cpp.i
-.PHONY : src/lista1/ex9.i
-
-# target to preprocess a source file
-src/lista1/ex9.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex9.dir\build.make CMakeFiles/ex9.dir/src/lista1/ex9.cpp.i
-.PHONY : src/lista1/ex9.cpp.i
-
-src/lista1/ex9.s: src/lista1/ex9.cpp.s
-.PHONY : src/lista1/ex9.s
-
-# target to generate assembly for a file
-src/lista1/ex9.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex9.dir\build.make CMakeFiles/ex9.dir/src/lista1/ex9.cpp.s
-.PHONY : src/lista1/ex9.cpp.s
+src/Grau_B.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grau_B.dir\build.make CMakeFiles/Grau_B.dir/src/Grau_B.cpp.s
+.PHONY : src/Grau_B.cpp.s
 
 src/test.obj: src/test.cpp.obj
 .PHONY : src/test.obj
@@ -732,59 +365,22 @@ help:
 	@echo ... install/local
 	@echo ... install/strip
 	@echo ... list_install_components
+	@echo ... package
+	@echo ... package_source
 	@echo ... rebuild_cache
 	@echo ... uninstall
 	@echo ... update_mappings
-	@echo ... ex10
-	@echo ... ex6-a
-	@echo ... ex6-b
-	@echo ... ex6-c
-	@echo ... ex6-d
-	@echo ... ex7-a
-	@echo ... ex7-b
-	@echo ... ex7-c
-	@echo ... ex7-d
-	@echo ... ex8
-	@echo ... ex9
+	@echo ... Grau_B
+	@echo ... freetype
 	@echo ... glfw
 	@echo ... glm
 	@echo ... test
 	@echo ... common/glad.obj
 	@echo ... common/glad.i
 	@echo ... common/glad.s
-	@echo ... src/lista1/ex10.obj
-	@echo ... src/lista1/ex10.i
-	@echo ... src/lista1/ex10.s
-	@echo ... src/lista1/ex6-a.obj
-	@echo ... src/lista1/ex6-a.i
-	@echo ... src/lista1/ex6-a.s
-	@echo ... src/lista1/ex6-b.obj
-	@echo ... src/lista1/ex6-b.i
-	@echo ... src/lista1/ex6-b.s
-	@echo ... src/lista1/ex6-c.obj
-	@echo ... src/lista1/ex6-c.i
-	@echo ... src/lista1/ex6-c.s
-	@echo ... src/lista1/ex6-d.obj
-	@echo ... src/lista1/ex6-d.i
-	@echo ... src/lista1/ex6-d.s
-	@echo ... src/lista1/ex7-a.obj
-	@echo ... src/lista1/ex7-a.i
-	@echo ... src/lista1/ex7-a.s
-	@echo ... src/lista1/ex7-b.obj
-	@echo ... src/lista1/ex7-b.i
-	@echo ... src/lista1/ex7-b.s
-	@echo ... src/lista1/ex7-c.obj
-	@echo ... src/lista1/ex7-c.i
-	@echo ... src/lista1/ex7-c.s
-	@echo ... src/lista1/ex7-d.obj
-	@echo ... src/lista1/ex7-d.i
-	@echo ... src/lista1/ex7-d.s
-	@echo ... src/lista1/ex8.obj
-	@echo ... src/lista1/ex8.i
-	@echo ... src/lista1/ex8.s
-	@echo ... src/lista1/ex9.obj
-	@echo ... src/lista1/ex9.i
-	@echo ... src/lista1/ex9.s
+	@echo ... src/Grau_B.obj
+	@echo ... src/Grau_B.i
+	@echo ... src/Grau_B.s
 	@echo ... src/test.obj
 	@echo ... src/test.i
 	@echo ... src/test.s

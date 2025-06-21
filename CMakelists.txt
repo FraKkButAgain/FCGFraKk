@@ -18,6 +18,12 @@ FetchContent_Declare(
 # Faz o download e compila as bibliotecas
 FetchContent_MakeAvailable(glfw)
 
+FetchContent_Declare(
+  freetype
+  GIT_REPOSITORY https://github.com/freetype/freetype.git
+  GIT_TAG VER-2-13-3
+)
+FetchContent_MakeAvailable(freetype)
 
 FetchContent_Declare(
 	glm
@@ -48,17 +54,7 @@ include_directories(${stb_image_SOURCE_DIR})
 # Lista de exemplos/exercícios podem ser colocados aqui também
 set(EXERCISES
     test
-    lista1/ex6-a
-    lista1/ex6-b
-    lista1/ex6-c
-    lista1/ex6-d
-    lista1/ex7-a
-    lista1/ex7-b
-    lista1/ex7-c
-    lista1/ex7-d
-    lista1/ex8
-    lista1/ex9
-    lista1/ex10
+    Grau_B
 )
 
 add_compile_options(-Wno-pragmas)
@@ -92,5 +88,5 @@ foreach(EXERCISE ${EXERCISES})
 
     # Configura as bibliotecas e include dirs para o executável
     target_include_directories(${EXE_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/include/glad ${glm_SOURCE_DIR} ${stb_image_SOURCE_DIR})
-    target_link_libraries(${EXE_NAME} glfw ${OPENGL_LIBS} glm::glm)
+    target_link_libraries(${EXE_NAME} glfw ${OPENGL_LIBS} glm::glm freetype)
 endforeach()

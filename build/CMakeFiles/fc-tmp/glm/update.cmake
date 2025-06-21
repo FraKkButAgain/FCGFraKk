@@ -4,6 +4,6 @@ message(VERBOSE "Executing update step for glm")
 
 block(SCOPE_FOR VARIABLES)
 
-include("C:/Users/FraKk/Documents/Fundamentos_de_computacao/FCGFraKk/build/CMakeFiles/fc-tmp/glm/glm-gitupdate.cmake")
+include("C:/Users/pichau/Documents/GitHub/FCGFraKk/build/CMakeFiles/fc-tmp/glm/glm-gitupdate.cmake")
 
 endblock()
