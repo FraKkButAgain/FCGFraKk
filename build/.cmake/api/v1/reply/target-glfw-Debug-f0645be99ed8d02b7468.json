@@ -132,15 +132,15 @@
 			[
 				{
 					"backtrace" : 7,
-					"path" : "C:/Users/pichau/Documents/GitHub/FCGFraKk/build/_deps/glfw-src/include"
+					"path" : "C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/_deps/glfw-src/include"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "C:/Users/pichau/Documents/GitHub/FCGFraKk/build/_deps/glfw-src/src"
+					"path" : "C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/_deps/glfw-src/src"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "C:/Users/pichau/Documents/GitHub/FCGFraKk/build/_deps/glfw-build/src"
+					"path" : "C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/_deps/glfw-build/src"
 				}
 			],
 			"language" : "C",

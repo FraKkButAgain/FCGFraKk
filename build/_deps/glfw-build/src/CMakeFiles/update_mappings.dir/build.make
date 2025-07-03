@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk
+CMAKE_SOURCE_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk\build
+CMAKE_BINARY_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk2\build
 
 # Utility rule file for update_mappings.
 
@@ -66,8 +66,8 @@ include _deps/glfw-build/src/CMakeFiles/update_mappings.dir/compiler_depend.make
 include _deps/glfw-build/src/CMakeFiles/update_mappings.dir/progress.make
 
 _deps/glfw-build/src/CMakeFiles/update_mappings:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glfw-src\src && "C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/pichau/Documents/GitHub/FCGFraKk/build/_deps/glfw-src/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\glfw-src\src && "C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/_deps/glfw-src/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 
 _deps/glfw-build/src/CMakeFiles/update_mappings.dir/codegen:
 .PHONY : _deps/glfw-build/src/CMakeFiles/update_mappings.dir/codegen
@@ -81,10 +81,10 @@ _deps/glfw-build/src/CMakeFiles/update_mappings.dir/build: update_mappings
 .PHONY : _deps/glfw-build/src/CMakeFiles/update_mappings.dir/build
 
 _deps/glfw-build/src/CMakeFiles/update_mappings.dir/clean:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glfw-build\src && $(CMAKE_COMMAND) -P CMakeFiles\update_mappings.dir\cmake_clean.cmake
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\glfw-build\src && $(CMAKE_COMMAND) -P CMakeFiles\update_mappings.dir\cmake_clean.cmake
 .PHONY : _deps/glfw-build/src/CMakeFiles/update_mappings.dir/clean
 
 _deps/glfw-build/src/CMakeFiles/update_mappings.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\pichau\Documents\GitHub\FCGFraKk C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glfw-src\src C:\Users\pichau\Documents\GitHub\FCGFraKk\build C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glfw-build\src C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glfw-build\src\CMakeFiles\update_mappings.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\pichau\Documents\GitHub\FCGFraKk2 C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\glfw-src\src C:\Users\pichau\Documents\GitHub\FCGFraKk2\build C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\glfw-build\src C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\glfw-build\src\CMakeFiles\update_mappings.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/glfw-build/src/CMakeFiles/update_mappings.dir/depend
 

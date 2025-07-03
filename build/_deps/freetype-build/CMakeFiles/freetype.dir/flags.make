@@ -11,7 +11,7 @@ C_FLAGS = -g -fvisibility=hidden
 
 RC_DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
 
-RC_INCLUDES = -I C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\freetype-build\include -I C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\freetype-src\include -I C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\freetype-build\include\freetype\config -I C:\msys64\ucrt64\include
+RC_INCLUDES = -I C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\freetype-build\include -I C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\freetype-src\include -I C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\freetype-build\include\freetype\config -I C:\msys64\ucrt64\include
 
 RC_FLAGS = 
 

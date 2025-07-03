@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk
+CMAKE_SOURCE_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk\build
+CMAKE_BINARY_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk2\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/pichau/Documents/GitHub/FCGFraKk/build/CPackSourceConfig.cmake
+	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -151,16 +151,16 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles C:\Users\pichau\Documents\GitHub\FCGFraKk\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\CMakeFiles C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles C:\Users\pichau\Documents\GitHub\FCGFraKk\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\CMakeFiles C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
@@ -199,19 +199,6 @@ test: cmake_check_build_system
 test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
-
-#=============================================================================
-# Target rules for targets named Grau_B
-
-# Build rule for target.
-Grau_B: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Grau_B
-.PHONY : Grau_B
-
-# fast build rule for target.
-Grau_B/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grau_B.dir\build.make CMakeFiles/Grau_B.dir/build
-.PHONY : Grau_B/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -284,7 +271,6 @@ common/glad.obj: common/glad.c.obj
 # target to build an object file
 common/glad.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/common/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grau_B.dir\build.make CMakeFiles/Grau_B.dir/common/glad.c.obj
 .PHONY : common/glad.c.obj
 
 common/glad.i: common/glad.c.i
@@ -293,7 +279,6 @@ common/glad.i: common/glad.c.i
 # target to preprocess a source file
 common/glad.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/common/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grau_B.dir\build.make CMakeFiles/Grau_B.dir/common/glad.c.i
 .PHONY : common/glad.c.i
 
 common/glad.s: common/glad.c.s
@@ -302,32 +287,7 @@ common/glad.s: common/glad.c.s
 # target to generate assembly for a file
 common/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/common/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grau_B.dir\build.make CMakeFiles/Grau_B.dir/common/glad.c.s
 .PHONY : common/glad.c.s
-
-src/Grau_B.obj: src/Grau_B.cpp.obj
-.PHONY : src/Grau_B.obj
-
-# target to build an object file
-src/Grau_B.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grau_B.dir\build.make CMakeFiles/Grau_B.dir/src/Grau_B.cpp.obj
-.PHONY : src/Grau_B.cpp.obj
-
-src/Grau_B.i: src/Grau_B.cpp.i
-.PHONY : src/Grau_B.i
-
-# target to preprocess a source file
-src/Grau_B.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grau_B.dir\build.make CMakeFiles/Grau_B.dir/src/Grau_B.cpp.i
-.PHONY : src/Grau_B.cpp.i
-
-src/Grau_B.s: src/Grau_B.cpp.s
-.PHONY : src/Grau_B.s
-
-# target to generate assembly for a file
-src/Grau_B.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grau_B.dir\build.make CMakeFiles/Grau_B.dir/src/Grau_B.cpp.s
-.PHONY : src/Grau_B.cpp.s
 
 src/test.obj: src/test.cpp.obj
 .PHONY : src/test.obj
@@ -370,7 +330,6 @@ help:
 	@echo ... rebuild_cache
 	@echo ... uninstall
 	@echo ... update_mappings
-	@echo ... Grau_B
 	@echo ... freetype
 	@echo ... glfw
 	@echo ... glm
@@ -378,9 +337,6 @@ help:
 	@echo ... common/glad.obj
 	@echo ... common/glad.i
 	@echo ... common/glad.s
-	@echo ... src/Grau_B.obj
-	@echo ... src/Grau_B.i
-	@echo ... src/Grau_B.s
 	@echo ... src/test.obj
 	@echo ... src/test.i
 	@echo ... src/test.s

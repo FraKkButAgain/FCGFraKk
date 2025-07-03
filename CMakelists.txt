@@ -54,7 +54,6 @@ include_directories(${stb_image_SOURCE_DIR})
 # Lista de exemplos/exercícios podem ser colocados aqui também
 set(EXERCISES
     test
-    Grau_B
 )
 
 add_compile_options(-Wno-pragmas)

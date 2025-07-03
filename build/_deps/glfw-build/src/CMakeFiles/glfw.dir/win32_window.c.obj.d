@@ -1,7 +1,7 @@
 _deps/glfw-build/src/CMakeFiles/glfw.dir/win32_window.c.obj: \
- C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glfw-src\src\win32_window.c \
- C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glfw-src\src\internal.h \
- C:/Users/pichau/Documents/GitHub/FCGFraKk/build/_deps/glfw-src/include/GLFW/glfw3.h \
+ C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\glfw-src\src\win32_window.c \
+ C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\glfw-src\src\internal.h \
+ C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/_deps/glfw-src/include/GLFW/glfw3.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stddef.h \
  C:/msys64/ucrt64/include/stddef.h C:/msys64/ucrt64/include/crtdefs.h \
  C:/msys64/ucrt64/include/corecrt.h C:/msys64/ucrt64/include/_mingw.h \
@@ -11,9 +11,9 @@ _deps/glfw-build/src/CMakeFiles/glfw.dir/win32_window.c.obj: \
  C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stdint.h \
  C:/msys64/ucrt64/include/stdint.h \
- C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glfw-src\src\platform.h \
- C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glfw-src\src\null_platform.h \
- C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glfw-src\src\win32_platform.h \
+ C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\glfw-src\src\platform.h \
+ C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\glfw-src\src\null_platform.h \
+ C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\glfw-src\src\win32_platform.h \
  C:/msys64/ucrt64/include/wctype.h \
  C:/msys64/ucrt64/include/corecrt_wctype.h \
  C:/msys64/ucrt64/include/windows.h C:/msys64/ucrt64/include/sdkddkver.h \
@@ -223,9 +223,9 @@ _deps/glfw-build/src/CMakeFiles/glfw.dir/win32_window.c.obj: \
  C:/msys64/ucrt64/include/propidl.h \
  C:/msys64/ucrt64/include/_mingw_dxhelper.h \
  C:/msys64/ucrt64/include/xinput.h C:/msys64/ucrt64/include/dbt.h \
- C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glfw-src\src\null_joystick.h \
- C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glfw-src\src\win32_joystick.h \
- C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glfw-src\src\win32_thread.h \
- C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\glfw-src\src\win32_time.h \
- C:/Users/pichau/Documents/GitHub/FCGFraKk/build/_deps/glfw-src/include/GLFW/glfw3native.h \
+ C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\glfw-src\src\null_joystick.h \
+ C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\glfw-src\src\win32_joystick.h \
+ C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\glfw-src\src\win32_thread.h \
+ C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\glfw-src\src\win32_time.h \
+ C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/_deps/glfw-src/include/GLFW/glfw3native.h \
  C:/msys64/ucrt64/include/windowsx.h C:/msys64/ucrt64/include/shellapi.h

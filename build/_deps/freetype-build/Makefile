@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk
+CMAKE_SOURCE_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk\build
+CMAKE_BINARY_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk2\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk\build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/pichau/Documents/GitHub/FCGFraKk/build/CPackSourceConfig.cmake
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -151,21 +151,21 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\freetype-build\\CMakeFiles\progress.marks
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/freetype-build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles 0
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\CMakeFiles C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\freetype-build\\CMakeFiles\progress.marks
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/freetype-build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles C:\Users\pichau\Documents\GitHub\FCGFraKk\build\_deps\freetype-build\\CMakeFiles\progress.marks
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/freetype-build/codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles 0
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\CMakeFiles C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\_deps\freetype-build\\CMakeFiles\progress.marks
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/freetype-build/codegen
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
 clean:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/freetype-build/clean
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/freetype-build/clean
 .PHONY : clean
 
 # The main clean target
@@ -174,22 +174,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/freetype-build/preinstall
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/freetype-build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/freetype-build/preinstall
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/freetype-build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/freetype-build/CMakeFiles/freetype.dir/rule:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/freetype-build/CMakeFiles/freetype.dir/rule
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/freetype-build/CMakeFiles/freetype.dir/rule
 .PHONY : _deps/freetype-build/CMakeFiles/freetype.dir/rule
 
 # Convenience name for target.
@@ -198,7 +198,7 @@ freetype: _deps/freetype-build/CMakeFiles/freetype.dir/rule
 
 # fast build rule for target.
 freetype/fast:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/build
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/build
 .PHONY : freetype/fast
 
 builds/windows/ftdebug.obj: builds/windows/ftdebug.c.obj
@@ -206,7 +206,7 @@ builds/windows/ftdebug.obj: builds/windows/ftdebug.c.obj
 
 # target to build an object file
 builds/windows/ftdebug.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/builds/windows/ftdebug.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/builds/windows/ftdebug.c.obj
 .PHONY : builds/windows/ftdebug.c.obj
 
 builds/windows/ftdebug.i: builds/windows/ftdebug.c.i
@@ -214,7 +214,7 @@ builds/windows/ftdebug.i: builds/windows/ftdebug.c.i
 
 # target to preprocess a source file
 builds/windows/ftdebug.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/builds/windows/ftdebug.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/builds/windows/ftdebug.c.i
 .PHONY : builds/windows/ftdebug.c.i
 
 builds/windows/ftdebug.s: builds/windows/ftdebug.c.s
@@ -222,7 +222,7 @@ builds/windows/ftdebug.s: builds/windows/ftdebug.c.s
 
 # target to generate assembly for a file
 builds/windows/ftdebug.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/builds/windows/ftdebug.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/builds/windows/ftdebug.c.s
 .PHONY : builds/windows/ftdebug.c.s
 
 builds/windows/ftsystem.obj: builds/windows/ftsystem.c.obj
@@ -230,7 +230,7 @@ builds/windows/ftsystem.obj: builds/windows/ftsystem.c.obj
 
 # target to build an object file
 builds/windows/ftsystem.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/builds/windows/ftsystem.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/builds/windows/ftsystem.c.obj
 .PHONY : builds/windows/ftsystem.c.obj
 
 builds/windows/ftsystem.i: builds/windows/ftsystem.c.i
@@ -238,7 +238,7 @@ builds/windows/ftsystem.i: builds/windows/ftsystem.c.i
 
 # target to preprocess a source file
 builds/windows/ftsystem.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/builds/windows/ftsystem.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/builds/windows/ftsystem.c.i
 .PHONY : builds/windows/ftsystem.c.i
 
 builds/windows/ftsystem.s: builds/windows/ftsystem.c.s
@@ -246,7 +246,7 @@ builds/windows/ftsystem.s: builds/windows/ftsystem.c.s
 
 # target to generate assembly for a file
 builds/windows/ftsystem.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/builds/windows/ftsystem.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/builds/windows/ftsystem.c.s
 .PHONY : builds/windows/ftsystem.c.s
 
 src/autofit/autofit.obj: src/autofit/autofit.c.obj
@@ -254,7 +254,7 @@ src/autofit/autofit.obj: src/autofit/autofit.c.obj
 
 # target to build an object file
 src/autofit/autofit.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/autofit/autofit.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/autofit/autofit.c.obj
 .PHONY : src/autofit/autofit.c.obj
 
 src/autofit/autofit.i: src/autofit/autofit.c.i
@@ -262,7 +262,7 @@ src/autofit/autofit.i: src/autofit/autofit.c.i
 
 # target to preprocess a source file
 src/autofit/autofit.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/autofit/autofit.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/autofit/autofit.c.i
 .PHONY : src/autofit/autofit.c.i
 
 src/autofit/autofit.s: src/autofit/autofit.c.s
@@ -270,7 +270,7 @@ src/autofit/autofit.s: src/autofit/autofit.c.s
 
 # target to generate assembly for a file
 src/autofit/autofit.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/autofit/autofit.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/autofit/autofit.c.s
 .PHONY : src/autofit/autofit.c.s
 
 src/base/ftbase.obj: src/base/ftbase.c.obj
@@ -278,7 +278,7 @@ src/base/ftbase.obj: src/base/ftbase.c.obj
 
 # target to build an object file
 src/base/ftbase.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbase.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbase.c.obj
 .PHONY : src/base/ftbase.c.obj
 
 src/base/ftbase.i: src/base/ftbase.c.i
@@ -286,7 +286,7 @@ src/base/ftbase.i: src/base/ftbase.c.i
 
 # target to preprocess a source file
 src/base/ftbase.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbase.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbase.c.i
 .PHONY : src/base/ftbase.c.i
 
 src/base/ftbase.s: src/base/ftbase.c.s
@@ -294,7 +294,7 @@ src/base/ftbase.s: src/base/ftbase.c.s
 
 # target to generate assembly for a file
 src/base/ftbase.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbase.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbase.c.s
 .PHONY : src/base/ftbase.c.s
 
 src/base/ftbbox.obj: src/base/ftbbox.c.obj
@@ -302,7 +302,7 @@ src/base/ftbbox.obj: src/base/ftbbox.c.obj
 
 # target to build an object file
 src/base/ftbbox.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbbox.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbbox.c.obj
 .PHONY : src/base/ftbbox.c.obj
 
 src/base/ftbbox.i: src/base/ftbbox.c.i
@@ -310,7 +310,7 @@ src/base/ftbbox.i: src/base/ftbbox.c.i
 
 # target to preprocess a source file
 src/base/ftbbox.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbbox.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbbox.c.i
 .PHONY : src/base/ftbbox.c.i
 
 src/base/ftbbox.s: src/base/ftbbox.c.s
@@ -318,7 +318,7 @@ src/base/ftbbox.s: src/base/ftbbox.c.s
 
 # target to generate assembly for a file
 src/base/ftbbox.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbbox.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbbox.c.s
 .PHONY : src/base/ftbbox.c.s
 
 src/base/ftbdf.obj: src/base/ftbdf.c.obj
@@ -326,7 +326,7 @@ src/base/ftbdf.obj: src/base/ftbdf.c.obj
 
 # target to build an object file
 src/base/ftbdf.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbdf.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbdf.c.obj
 .PHONY : src/base/ftbdf.c.obj
 
 src/base/ftbdf.i: src/base/ftbdf.c.i
@@ -334,7 +334,7 @@ src/base/ftbdf.i: src/base/ftbdf.c.i
 
 # target to preprocess a source file
 src/base/ftbdf.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbdf.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbdf.c.i
 .PHONY : src/base/ftbdf.c.i
 
 src/base/ftbdf.s: src/base/ftbdf.c.s
@@ -342,7 +342,7 @@ src/base/ftbdf.s: src/base/ftbdf.c.s
 
 # target to generate assembly for a file
 src/base/ftbdf.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbdf.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbdf.c.s
 .PHONY : src/base/ftbdf.c.s
 
 src/base/ftbitmap.obj: src/base/ftbitmap.c.obj
@@ -350,7 +350,7 @@ src/base/ftbitmap.obj: src/base/ftbitmap.c.obj
 
 # target to build an object file
 src/base/ftbitmap.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbitmap.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbitmap.c.obj
 .PHONY : src/base/ftbitmap.c.obj
 
 src/base/ftbitmap.i: src/base/ftbitmap.c.i
@@ -358,7 +358,7 @@ src/base/ftbitmap.i: src/base/ftbitmap.c.i
 
 # target to preprocess a source file
 src/base/ftbitmap.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbitmap.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbitmap.c.i
 .PHONY : src/base/ftbitmap.c.i
 
 src/base/ftbitmap.s: src/base/ftbitmap.c.s
@@ -366,7 +366,7 @@ src/base/ftbitmap.s: src/base/ftbitmap.c.s
 
 # target to generate assembly for a file
 src/base/ftbitmap.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbitmap.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftbitmap.c.s
 .PHONY : src/base/ftbitmap.c.s
 
 src/base/ftcid.obj: src/base/ftcid.c.obj
@@ -374,7 +374,7 @@ src/base/ftcid.obj: src/base/ftcid.c.obj
 
 # target to build an object file
 src/base/ftcid.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftcid.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftcid.c.obj
 .PHONY : src/base/ftcid.c.obj
 
 src/base/ftcid.i: src/base/ftcid.c.i
@@ -382,7 +382,7 @@ src/base/ftcid.i: src/base/ftcid.c.i
 
 # target to preprocess a source file
 src/base/ftcid.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftcid.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftcid.c.i
 .PHONY : src/base/ftcid.c.i
 
 src/base/ftcid.s: src/base/ftcid.c.s
@@ -390,7 +390,7 @@ src/base/ftcid.s: src/base/ftcid.c.s
 
 # target to generate assembly for a file
 src/base/ftcid.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftcid.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftcid.c.s
 .PHONY : src/base/ftcid.c.s
 
 src/base/ftfstype.obj: src/base/ftfstype.c.obj
@@ -398,7 +398,7 @@ src/base/ftfstype.obj: src/base/ftfstype.c.obj
 
 # target to build an object file
 src/base/ftfstype.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftfstype.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftfstype.c.obj
 .PHONY : src/base/ftfstype.c.obj
 
 src/base/ftfstype.i: src/base/ftfstype.c.i
@@ -406,7 +406,7 @@ src/base/ftfstype.i: src/base/ftfstype.c.i
 
 # target to preprocess a source file
 src/base/ftfstype.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftfstype.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftfstype.c.i
 .PHONY : src/base/ftfstype.c.i
 
 src/base/ftfstype.s: src/base/ftfstype.c.s
@@ -414,7 +414,7 @@ src/base/ftfstype.s: src/base/ftfstype.c.s
 
 # target to generate assembly for a file
 src/base/ftfstype.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftfstype.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftfstype.c.s
 .PHONY : src/base/ftfstype.c.s
 
 src/base/ftgasp.obj: src/base/ftgasp.c.obj
@@ -422,7 +422,7 @@ src/base/ftgasp.obj: src/base/ftgasp.c.obj
 
 # target to build an object file
 src/base/ftgasp.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftgasp.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftgasp.c.obj
 .PHONY : src/base/ftgasp.c.obj
 
 src/base/ftgasp.i: src/base/ftgasp.c.i
@@ -430,7 +430,7 @@ src/base/ftgasp.i: src/base/ftgasp.c.i
 
 # target to preprocess a source file
 src/base/ftgasp.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftgasp.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftgasp.c.i
 .PHONY : src/base/ftgasp.c.i
 
 src/base/ftgasp.s: src/base/ftgasp.c.s
@@ -438,7 +438,7 @@ src/base/ftgasp.s: src/base/ftgasp.c.s
 
 # target to generate assembly for a file
 src/base/ftgasp.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftgasp.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftgasp.c.s
 .PHONY : src/base/ftgasp.c.s
 
 src/base/ftglyph.obj: src/base/ftglyph.c.obj
@@ -446,7 +446,7 @@ src/base/ftglyph.obj: src/base/ftglyph.c.obj
 
 # target to build an object file
 src/base/ftglyph.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftglyph.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftglyph.c.obj
 .PHONY : src/base/ftglyph.c.obj
 
 src/base/ftglyph.i: src/base/ftglyph.c.i
@@ -454,7 +454,7 @@ src/base/ftglyph.i: src/base/ftglyph.c.i
 
 # target to preprocess a source file
 src/base/ftglyph.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftglyph.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftglyph.c.i
 .PHONY : src/base/ftglyph.c.i
 
 src/base/ftglyph.s: src/base/ftglyph.c.s
@@ -462,7 +462,7 @@ src/base/ftglyph.s: src/base/ftglyph.c.s
 
 # target to generate assembly for a file
 src/base/ftglyph.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftglyph.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftglyph.c.s
 .PHONY : src/base/ftglyph.c.s
 
 src/base/ftgxval.obj: src/base/ftgxval.c.obj
@@ -470,7 +470,7 @@ src/base/ftgxval.obj: src/base/ftgxval.c.obj
 
 # target to build an object file
 src/base/ftgxval.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftgxval.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftgxval.c.obj
 .PHONY : src/base/ftgxval.c.obj
 
 src/base/ftgxval.i: src/base/ftgxval.c.i
@@ -478,7 +478,7 @@ src/base/ftgxval.i: src/base/ftgxval.c.i
 
 # target to preprocess a source file
 src/base/ftgxval.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftgxval.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftgxval.c.i
 .PHONY : src/base/ftgxval.c.i
 
 src/base/ftgxval.s: src/base/ftgxval.c.s
@@ -486,7 +486,7 @@ src/base/ftgxval.s: src/base/ftgxval.c.s
 
 # target to generate assembly for a file
 src/base/ftgxval.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftgxval.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftgxval.c.s
 .PHONY : src/base/ftgxval.c.s
 
 src/base/ftinit.obj: src/base/ftinit.c.obj
@@ -494,7 +494,7 @@ src/base/ftinit.obj: src/base/ftinit.c.obj
 
 # target to build an object file
 src/base/ftinit.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftinit.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftinit.c.obj
 .PHONY : src/base/ftinit.c.obj
 
 src/base/ftinit.i: src/base/ftinit.c.i
@@ -502,7 +502,7 @@ src/base/ftinit.i: src/base/ftinit.c.i
 
 # target to preprocess a source file
 src/base/ftinit.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftinit.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftinit.c.i
 .PHONY : src/base/ftinit.c.i
 
 src/base/ftinit.s: src/base/ftinit.c.s
@@ -510,7 +510,7 @@ src/base/ftinit.s: src/base/ftinit.c.s
 
 # target to generate assembly for a file
 src/base/ftinit.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftinit.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftinit.c.s
 .PHONY : src/base/ftinit.c.s
 
 src/base/ftmm.obj: src/base/ftmm.c.obj
@@ -518,7 +518,7 @@ src/base/ftmm.obj: src/base/ftmm.c.obj
 
 # target to build an object file
 src/base/ftmm.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftmm.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftmm.c.obj
 .PHONY : src/base/ftmm.c.obj
 
 src/base/ftmm.i: src/base/ftmm.c.i
@@ -526,7 +526,7 @@ src/base/ftmm.i: src/base/ftmm.c.i
 
 # target to preprocess a source file
 src/base/ftmm.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftmm.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftmm.c.i
 .PHONY : src/base/ftmm.c.i
 
 src/base/ftmm.s: src/base/ftmm.c.s
@@ -534,7 +534,7 @@ src/base/ftmm.s: src/base/ftmm.c.s
 
 # target to generate assembly for a file
 src/base/ftmm.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftmm.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftmm.c.s
 .PHONY : src/base/ftmm.c.s
 
 src/base/ftotval.obj: src/base/ftotval.c.obj
@@ -542,7 +542,7 @@ src/base/ftotval.obj: src/base/ftotval.c.obj
 
 # target to build an object file
 src/base/ftotval.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftotval.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftotval.c.obj
 .PHONY : src/base/ftotval.c.obj
 
 src/base/ftotval.i: src/base/ftotval.c.i
@@ -550,7 +550,7 @@ src/base/ftotval.i: src/base/ftotval.c.i
 
 # target to preprocess a source file
 src/base/ftotval.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftotval.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftotval.c.i
 .PHONY : src/base/ftotval.c.i
 
 src/base/ftotval.s: src/base/ftotval.c.s
@@ -558,7 +558,7 @@ src/base/ftotval.s: src/base/ftotval.c.s
 
 # target to generate assembly for a file
 src/base/ftotval.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftotval.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftotval.c.s
 .PHONY : src/base/ftotval.c.s
 
 src/base/ftpatent.obj: src/base/ftpatent.c.obj
@@ -566,7 +566,7 @@ src/base/ftpatent.obj: src/base/ftpatent.c.obj
 
 # target to build an object file
 src/base/ftpatent.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftpatent.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftpatent.c.obj
 .PHONY : src/base/ftpatent.c.obj
 
 src/base/ftpatent.i: src/base/ftpatent.c.i
@@ -574,7 +574,7 @@ src/base/ftpatent.i: src/base/ftpatent.c.i
 
 # target to preprocess a source file
 src/base/ftpatent.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftpatent.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftpatent.c.i
 .PHONY : src/base/ftpatent.c.i
 
 src/base/ftpatent.s: src/base/ftpatent.c.s
@@ -582,7 +582,7 @@ src/base/ftpatent.s: src/base/ftpatent.c.s
 
 # target to generate assembly for a file
 src/base/ftpatent.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftpatent.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftpatent.c.s
 .PHONY : src/base/ftpatent.c.s
 
 src/base/ftpfr.obj: src/base/ftpfr.c.obj
@@ -590,7 +590,7 @@ src/base/ftpfr.obj: src/base/ftpfr.c.obj
 
 # target to build an object file
 src/base/ftpfr.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftpfr.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftpfr.c.obj
 .PHONY : src/base/ftpfr.c.obj
 
 src/base/ftpfr.i: src/base/ftpfr.c.i
@@ -598,7 +598,7 @@ src/base/ftpfr.i: src/base/ftpfr.c.i
 
 # target to preprocess a source file
 src/base/ftpfr.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftpfr.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftpfr.c.i
 .PHONY : src/base/ftpfr.c.i
 
 src/base/ftpfr.s: src/base/ftpfr.c.s
@@ -606,7 +606,7 @@ src/base/ftpfr.s: src/base/ftpfr.c.s
 
 # target to generate assembly for a file
 src/base/ftpfr.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftpfr.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftpfr.c.s
 .PHONY : src/base/ftpfr.c.s
 
 src/base/ftstroke.obj: src/base/ftstroke.c.obj
@@ -614,7 +614,7 @@ src/base/ftstroke.obj: src/base/ftstroke.c.obj
 
 # target to build an object file
 src/base/ftstroke.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftstroke.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftstroke.c.obj
 .PHONY : src/base/ftstroke.c.obj
 
 src/base/ftstroke.i: src/base/ftstroke.c.i
@@ -622,7 +622,7 @@ src/base/ftstroke.i: src/base/ftstroke.c.i
 
 # target to preprocess a source file
 src/base/ftstroke.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftstroke.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftstroke.c.i
 .PHONY : src/base/ftstroke.c.i
 
 src/base/ftstroke.s: src/base/ftstroke.c.s
@@ -630,7 +630,7 @@ src/base/ftstroke.s: src/base/ftstroke.c.s
 
 # target to generate assembly for a file
 src/base/ftstroke.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftstroke.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftstroke.c.s
 .PHONY : src/base/ftstroke.c.s
 
 src/base/ftsynth.obj: src/base/ftsynth.c.obj
@@ -638,7 +638,7 @@ src/base/ftsynth.obj: src/base/ftsynth.c.obj
 
 # target to build an object file
 src/base/ftsynth.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftsynth.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftsynth.c.obj
 .PHONY : src/base/ftsynth.c.obj
 
 src/base/ftsynth.i: src/base/ftsynth.c.i
@@ -646,7 +646,7 @@ src/base/ftsynth.i: src/base/ftsynth.c.i
 
 # target to preprocess a source file
 src/base/ftsynth.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftsynth.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftsynth.c.i
 .PHONY : src/base/ftsynth.c.i
 
 src/base/ftsynth.s: src/base/ftsynth.c.s
@@ -654,7 +654,7 @@ src/base/ftsynth.s: src/base/ftsynth.c.s
 
 # target to generate assembly for a file
 src/base/ftsynth.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftsynth.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftsynth.c.s
 .PHONY : src/base/ftsynth.c.s
 
 src/base/fttype1.obj: src/base/fttype1.c.obj
@@ -662,7 +662,7 @@ src/base/fttype1.obj: src/base/fttype1.c.obj
 
 # target to build an object file
 src/base/fttype1.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/fttype1.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/fttype1.c.obj
 .PHONY : src/base/fttype1.c.obj
 
 src/base/fttype1.i: src/base/fttype1.c.i
@@ -670,7 +670,7 @@ src/base/fttype1.i: src/base/fttype1.c.i
 
 # target to preprocess a source file
 src/base/fttype1.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/fttype1.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/fttype1.c.i
 .PHONY : src/base/fttype1.c.i
 
 src/base/fttype1.s: src/base/fttype1.c.s
@@ -678,7 +678,7 @@ src/base/fttype1.s: src/base/fttype1.c.s
 
 # target to generate assembly for a file
 src/base/fttype1.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/fttype1.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/fttype1.c.s
 .PHONY : src/base/fttype1.c.s
 
 src/base/ftver.obj: src/base/ftver.rc.obj
@@ -686,7 +686,7 @@ src/base/ftver.obj: src/base/ftver.rc.obj
 
 # target to build an object file
 src/base/ftver.rc.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftver.rc.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftver.rc.obj
 .PHONY : src/base/ftver.rc.obj
 
 src/base/ftwinfnt.obj: src/base/ftwinfnt.c.obj
@@ -694,7 +694,7 @@ src/base/ftwinfnt.obj: src/base/ftwinfnt.c.obj
 
 # target to build an object file
 src/base/ftwinfnt.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftwinfnt.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftwinfnt.c.obj
 .PHONY : src/base/ftwinfnt.c.obj
 
 src/base/ftwinfnt.i: src/base/ftwinfnt.c.i
@@ -702,7 +702,7 @@ src/base/ftwinfnt.i: src/base/ftwinfnt.c.i
 
 # target to preprocess a source file
 src/base/ftwinfnt.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftwinfnt.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftwinfnt.c.i
 .PHONY : src/base/ftwinfnt.c.i
 
 src/base/ftwinfnt.s: src/base/ftwinfnt.c.s
@@ -710,7 +710,7 @@ src/base/ftwinfnt.s: src/base/ftwinfnt.c.s
 
 # target to generate assembly for a file
 src/base/ftwinfnt.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftwinfnt.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/base/ftwinfnt.c.s
 .PHONY : src/base/ftwinfnt.c.s
 
 src/bdf/bdf.obj: src/bdf/bdf.c.obj
@@ -718,7 +718,7 @@ src/bdf/bdf.obj: src/bdf/bdf.c.obj
 
 # target to build an object file
 src/bdf/bdf.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/bdf/bdf.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/bdf/bdf.c.obj
 .PHONY : src/bdf/bdf.c.obj
 
 src/bdf/bdf.i: src/bdf/bdf.c.i
@@ -726,7 +726,7 @@ src/bdf/bdf.i: src/bdf/bdf.c.i
 
 # target to preprocess a source file
 src/bdf/bdf.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/bdf/bdf.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/bdf/bdf.c.i
 .PHONY : src/bdf/bdf.c.i
 
 src/bdf/bdf.s: src/bdf/bdf.c.s
@@ -734,7 +734,7 @@ src/bdf/bdf.s: src/bdf/bdf.c.s
 
 # target to generate assembly for a file
 src/bdf/bdf.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/bdf/bdf.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/bdf/bdf.c.s
 .PHONY : src/bdf/bdf.c.s
 
 src/bzip2/ftbzip2.obj: src/bzip2/ftbzip2.c.obj
@@ -742,7 +742,7 @@ src/bzip2/ftbzip2.obj: src/bzip2/ftbzip2.c.obj
 
 # target to build an object file
 src/bzip2/ftbzip2.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.obj
 .PHONY : src/bzip2/ftbzip2.c.obj
 
 src/bzip2/ftbzip2.i: src/bzip2/ftbzip2.c.i
@@ -750,7 +750,7 @@ src/bzip2/ftbzip2.i: src/bzip2/ftbzip2.c.i
 
 # target to preprocess a source file
 src/bzip2/ftbzip2.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.i
 .PHONY : src/bzip2/ftbzip2.c.i
 
 src/bzip2/ftbzip2.s: src/bzip2/ftbzip2.c.s
@@ -758,7 +758,7 @@ src/bzip2/ftbzip2.s: src/bzip2/ftbzip2.c.s
 
 # target to generate assembly for a file
 src/bzip2/ftbzip2.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.s
 .PHONY : src/bzip2/ftbzip2.c.s
 
 src/cache/ftcache.obj: src/cache/ftcache.c.obj
@@ -766,7 +766,7 @@ src/cache/ftcache.obj: src/cache/ftcache.c.obj
 
 # target to build an object file
 src/cache/ftcache.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cache/ftcache.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cache/ftcache.c.obj
 .PHONY : src/cache/ftcache.c.obj
 
 src/cache/ftcache.i: src/cache/ftcache.c.i
@@ -774,7 +774,7 @@ src/cache/ftcache.i: src/cache/ftcache.c.i
 
 # target to preprocess a source file
 src/cache/ftcache.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cache/ftcache.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cache/ftcache.c.i
 .PHONY : src/cache/ftcache.c.i
 
 src/cache/ftcache.s: src/cache/ftcache.c.s
@@ -782,7 +782,7 @@ src/cache/ftcache.s: src/cache/ftcache.c.s
 
 # target to generate assembly for a file
 src/cache/ftcache.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cache/ftcache.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cache/ftcache.c.s
 .PHONY : src/cache/ftcache.c.s
 
 src/cff/cff.obj: src/cff/cff.c.obj
@@ -790,7 +790,7 @@ src/cff/cff.obj: src/cff/cff.c.obj
 
 # target to build an object file
 src/cff/cff.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cff/cff.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cff/cff.c.obj
 .PHONY : src/cff/cff.c.obj
 
 src/cff/cff.i: src/cff/cff.c.i
@@ -798,7 +798,7 @@ src/cff/cff.i: src/cff/cff.c.i
 
 # target to preprocess a source file
 src/cff/cff.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cff/cff.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cff/cff.c.i
 .PHONY : src/cff/cff.c.i
 
 src/cff/cff.s: src/cff/cff.c.s
@@ -806,7 +806,7 @@ src/cff/cff.s: src/cff/cff.c.s
 
 # target to generate assembly for a file
 src/cff/cff.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cff/cff.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cff/cff.c.s
 .PHONY : src/cff/cff.c.s
 
 src/cid/type1cid.obj: src/cid/type1cid.c.obj
@@ -814,7 +814,7 @@ src/cid/type1cid.obj: src/cid/type1cid.c.obj
 
 # target to build an object file
 src/cid/type1cid.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cid/type1cid.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cid/type1cid.c.obj
 .PHONY : src/cid/type1cid.c.obj
 
 src/cid/type1cid.i: src/cid/type1cid.c.i
@@ -822,7 +822,7 @@ src/cid/type1cid.i: src/cid/type1cid.c.i
 
 # target to preprocess a source file
 src/cid/type1cid.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cid/type1cid.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cid/type1cid.c.i
 .PHONY : src/cid/type1cid.c.i
 
 src/cid/type1cid.s: src/cid/type1cid.c.s
@@ -830,7 +830,7 @@ src/cid/type1cid.s: src/cid/type1cid.c.s
 
 # target to generate assembly for a file
 src/cid/type1cid.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cid/type1cid.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/cid/type1cid.c.s
 .PHONY : src/cid/type1cid.c.s
 
 src/gzip/ftgzip.obj: src/gzip/ftgzip.c.obj
@@ -838,7 +838,7 @@ src/gzip/ftgzip.obj: src/gzip/ftgzip.c.obj
 
 # target to build an object file
 src/gzip/ftgzip.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/gzip/ftgzip.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/gzip/ftgzip.c.obj
 .PHONY : src/gzip/ftgzip.c.obj
 
 src/gzip/ftgzip.i: src/gzip/ftgzip.c.i
@@ -846,7 +846,7 @@ src/gzip/ftgzip.i: src/gzip/ftgzip.c.i
 
 # target to preprocess a source file
 src/gzip/ftgzip.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/gzip/ftgzip.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/gzip/ftgzip.c.i
 .PHONY : src/gzip/ftgzip.c.i
 
 src/gzip/ftgzip.s: src/gzip/ftgzip.c.s
@@ -854,7 +854,7 @@ src/gzip/ftgzip.s: src/gzip/ftgzip.c.s
 
 # target to generate assembly for a file
 src/gzip/ftgzip.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/gzip/ftgzip.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/gzip/ftgzip.c.s
 .PHONY : src/gzip/ftgzip.c.s
 
 src/lzw/ftlzw.obj: src/lzw/ftlzw.c.obj
@@ -862,7 +862,7 @@ src/lzw/ftlzw.obj: src/lzw/ftlzw.c.obj
 
 # target to build an object file
 src/lzw/ftlzw.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/lzw/ftlzw.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/lzw/ftlzw.c.obj
 .PHONY : src/lzw/ftlzw.c.obj
 
 src/lzw/ftlzw.i: src/lzw/ftlzw.c.i
@@ -870,7 +870,7 @@ src/lzw/ftlzw.i: src/lzw/ftlzw.c.i
 
 # target to preprocess a source file
 src/lzw/ftlzw.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/lzw/ftlzw.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/lzw/ftlzw.c.i
 .PHONY : src/lzw/ftlzw.c.i
 
 src/lzw/ftlzw.s: src/lzw/ftlzw.c.s
@@ -878,7 +878,7 @@ src/lzw/ftlzw.s: src/lzw/ftlzw.c.s
 
 # target to generate assembly for a file
 src/lzw/ftlzw.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/lzw/ftlzw.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/lzw/ftlzw.c.s
 .PHONY : src/lzw/ftlzw.c.s
 
 src/pcf/pcf.obj: src/pcf/pcf.c.obj
@@ -886,7 +886,7 @@ src/pcf/pcf.obj: src/pcf/pcf.c.obj
 
 # target to build an object file
 src/pcf/pcf.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pcf/pcf.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pcf/pcf.c.obj
 .PHONY : src/pcf/pcf.c.obj
 
 src/pcf/pcf.i: src/pcf/pcf.c.i
@@ -894,7 +894,7 @@ src/pcf/pcf.i: src/pcf/pcf.c.i
 
 # target to preprocess a source file
 src/pcf/pcf.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pcf/pcf.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pcf/pcf.c.i
 .PHONY : src/pcf/pcf.c.i
 
 src/pcf/pcf.s: src/pcf/pcf.c.s
@@ -902,7 +902,7 @@ src/pcf/pcf.s: src/pcf/pcf.c.s
 
 # target to generate assembly for a file
 src/pcf/pcf.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pcf/pcf.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pcf/pcf.c.s
 .PHONY : src/pcf/pcf.c.s
 
 src/pfr/pfr.obj: src/pfr/pfr.c.obj
@@ -910,7 +910,7 @@ src/pfr/pfr.obj: src/pfr/pfr.c.obj
 
 # target to build an object file
 src/pfr/pfr.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pfr/pfr.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pfr/pfr.c.obj
 .PHONY : src/pfr/pfr.c.obj
 
 src/pfr/pfr.i: src/pfr/pfr.c.i
@@ -918,7 +918,7 @@ src/pfr/pfr.i: src/pfr/pfr.c.i
 
 # target to preprocess a source file
 src/pfr/pfr.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pfr/pfr.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pfr/pfr.c.i
 .PHONY : src/pfr/pfr.c.i
 
 src/pfr/pfr.s: src/pfr/pfr.c.s
@@ -926,7 +926,7 @@ src/pfr/pfr.s: src/pfr/pfr.c.s
 
 # target to generate assembly for a file
 src/pfr/pfr.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pfr/pfr.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pfr/pfr.c.s
 .PHONY : src/pfr/pfr.c.s
 
 src/psaux/psaux.obj: src/psaux/psaux.c.obj
@@ -934,7 +934,7 @@ src/psaux/psaux.obj: src/psaux/psaux.c.obj
 
 # target to build an object file
 src/psaux/psaux.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/psaux/psaux.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/psaux/psaux.c.obj
 .PHONY : src/psaux/psaux.c.obj
 
 src/psaux/psaux.i: src/psaux/psaux.c.i
@@ -942,7 +942,7 @@ src/psaux/psaux.i: src/psaux/psaux.c.i
 
 # target to preprocess a source file
 src/psaux/psaux.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/psaux/psaux.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/psaux/psaux.c.i
 .PHONY : src/psaux/psaux.c.i
 
 src/psaux/psaux.s: src/psaux/psaux.c.s
@@ -950,7 +950,7 @@ src/psaux/psaux.s: src/psaux/psaux.c.s
 
 # target to generate assembly for a file
 src/psaux/psaux.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/psaux/psaux.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/psaux/psaux.c.s
 .PHONY : src/psaux/psaux.c.s
 
 src/pshinter/pshinter.obj: src/pshinter/pshinter.c.obj
@@ -958,7 +958,7 @@ src/pshinter/pshinter.obj: src/pshinter/pshinter.c.obj
 
 # target to build an object file
 src/pshinter/pshinter.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pshinter/pshinter.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pshinter/pshinter.c.obj
 .PHONY : src/pshinter/pshinter.c.obj
 
 src/pshinter/pshinter.i: src/pshinter/pshinter.c.i
@@ -966,7 +966,7 @@ src/pshinter/pshinter.i: src/pshinter/pshinter.c.i
 
 # target to preprocess a source file
 src/pshinter/pshinter.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pshinter/pshinter.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pshinter/pshinter.c.i
 .PHONY : src/pshinter/pshinter.c.i
 
 src/pshinter/pshinter.s: src/pshinter/pshinter.c.s
@@ -974,7 +974,7 @@ src/pshinter/pshinter.s: src/pshinter/pshinter.c.s
 
 # target to generate assembly for a file
 src/pshinter/pshinter.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pshinter/pshinter.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/pshinter/pshinter.c.s
 .PHONY : src/pshinter/pshinter.c.s
 
 src/psnames/psnames.obj: src/psnames/psnames.c.obj
@@ -982,7 +982,7 @@ src/psnames/psnames.obj: src/psnames/psnames.c.obj
 
 # target to build an object file
 src/psnames/psnames.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/psnames/psnames.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/psnames/psnames.c.obj
 .PHONY : src/psnames/psnames.c.obj
 
 src/psnames/psnames.i: src/psnames/psnames.c.i
@@ -990,7 +990,7 @@ src/psnames/psnames.i: src/psnames/psnames.c.i
 
 # target to preprocess a source file
 src/psnames/psnames.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/psnames/psnames.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/psnames/psnames.c.i
 .PHONY : src/psnames/psnames.c.i
 
 src/psnames/psnames.s: src/psnames/psnames.c.s
@@ -998,7 +998,7 @@ src/psnames/psnames.s: src/psnames/psnames.c.s
 
 # target to generate assembly for a file
 src/psnames/psnames.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/psnames/psnames.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/psnames/psnames.c.s
 .PHONY : src/psnames/psnames.c.s
 
 src/raster/raster.obj: src/raster/raster.c.obj
@@ -1006,7 +1006,7 @@ src/raster/raster.obj: src/raster/raster.c.obj
 
 # target to build an object file
 src/raster/raster.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/raster/raster.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/raster/raster.c.obj
 .PHONY : src/raster/raster.c.obj
 
 src/raster/raster.i: src/raster/raster.c.i
@@ -1014,7 +1014,7 @@ src/raster/raster.i: src/raster/raster.c.i
 
 # target to preprocess a source file
 src/raster/raster.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/raster/raster.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/raster/raster.c.i
 .PHONY : src/raster/raster.c.i
 
 src/raster/raster.s: src/raster/raster.c.s
@@ -1022,7 +1022,7 @@ src/raster/raster.s: src/raster/raster.c.s
 
 # target to generate assembly for a file
 src/raster/raster.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/raster/raster.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/raster/raster.c.s
 .PHONY : src/raster/raster.c.s
 
 src/sdf/sdf.obj: src/sdf/sdf.c.obj
@@ -1030,7 +1030,7 @@ src/sdf/sdf.obj: src/sdf/sdf.c.obj
 
 # target to build an object file
 src/sdf/sdf.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/sdf/sdf.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/sdf/sdf.c.obj
 .PHONY : src/sdf/sdf.c.obj
 
 src/sdf/sdf.i: src/sdf/sdf.c.i
@@ -1038,7 +1038,7 @@ src/sdf/sdf.i: src/sdf/sdf.c.i
 
 # target to preprocess a source file
 src/sdf/sdf.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/sdf/sdf.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/sdf/sdf.c.i
 .PHONY : src/sdf/sdf.c.i
 
 src/sdf/sdf.s: src/sdf/sdf.c.s
@@ -1046,7 +1046,7 @@ src/sdf/sdf.s: src/sdf/sdf.c.s
 
 # target to generate assembly for a file
 src/sdf/sdf.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/sdf/sdf.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/sdf/sdf.c.s
 .PHONY : src/sdf/sdf.c.s
 
 src/sfnt/sfnt.obj: src/sfnt/sfnt.c.obj
@@ -1054,7 +1054,7 @@ src/sfnt/sfnt.obj: src/sfnt/sfnt.c.obj
 
 # target to build an object file
 src/sfnt/sfnt.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/sfnt/sfnt.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/sfnt/sfnt.c.obj
 .PHONY : src/sfnt/sfnt.c.obj
 
 src/sfnt/sfnt.i: src/sfnt/sfnt.c.i
@@ -1062,7 +1062,7 @@ src/sfnt/sfnt.i: src/sfnt/sfnt.c.i
 
 # target to preprocess a source file
 src/sfnt/sfnt.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/sfnt/sfnt.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/sfnt/sfnt.c.i
 .PHONY : src/sfnt/sfnt.c.i
 
 src/sfnt/sfnt.s: src/sfnt/sfnt.c.s
@@ -1070,7 +1070,7 @@ src/sfnt/sfnt.s: src/sfnt/sfnt.c.s
 
 # target to generate assembly for a file
 src/sfnt/sfnt.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/sfnt/sfnt.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/sfnt/sfnt.c.s
 .PHONY : src/sfnt/sfnt.c.s
 
 src/smooth/smooth.obj: src/smooth/smooth.c.obj
@@ -1078,7 +1078,7 @@ src/smooth/smooth.obj: src/smooth/smooth.c.obj
 
 # target to build an object file
 src/smooth/smooth.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/smooth/smooth.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/smooth/smooth.c.obj
 .PHONY : src/smooth/smooth.c.obj
 
 src/smooth/smooth.i: src/smooth/smooth.c.i
@@ -1086,7 +1086,7 @@ src/smooth/smooth.i: src/smooth/smooth.c.i
 
 # target to preprocess a source file
 src/smooth/smooth.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/smooth/smooth.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/smooth/smooth.c.i
 .PHONY : src/smooth/smooth.c.i
 
 src/smooth/smooth.s: src/smooth/smooth.c.s
@@ -1094,7 +1094,7 @@ src/smooth/smooth.s: src/smooth/smooth.c.s
 
 # target to generate assembly for a file
 src/smooth/smooth.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/smooth/smooth.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/smooth/smooth.c.s
 .PHONY : src/smooth/smooth.c.s
 
 src/svg/svg.obj: src/svg/svg.c.obj
@@ -1102,7 +1102,7 @@ src/svg/svg.obj: src/svg/svg.c.obj
 
 # target to build an object file
 src/svg/svg.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/svg/svg.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/svg/svg.c.obj
 .PHONY : src/svg/svg.c.obj
 
 src/svg/svg.i: src/svg/svg.c.i
@@ -1110,7 +1110,7 @@ src/svg/svg.i: src/svg/svg.c.i
 
 # target to preprocess a source file
 src/svg/svg.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/svg/svg.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/svg/svg.c.i
 .PHONY : src/svg/svg.c.i
 
 src/svg/svg.s: src/svg/svg.c.s
@@ -1118,7 +1118,7 @@ src/svg/svg.s: src/svg/svg.c.s
 
 # target to generate assembly for a file
 src/svg/svg.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/svg/svg.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/svg/svg.c.s
 .PHONY : src/svg/svg.c.s
 
 src/truetype/truetype.obj: src/truetype/truetype.c.obj
@@ -1126,7 +1126,7 @@ src/truetype/truetype.obj: src/truetype/truetype.c.obj
 
 # target to build an object file
 src/truetype/truetype.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/truetype/truetype.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/truetype/truetype.c.obj
 .PHONY : src/truetype/truetype.c.obj
 
 src/truetype/truetype.i: src/truetype/truetype.c.i
@@ -1134,7 +1134,7 @@ src/truetype/truetype.i: src/truetype/truetype.c.i
 
 # target to preprocess a source file
 src/truetype/truetype.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/truetype/truetype.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/truetype/truetype.c.i
 .PHONY : src/truetype/truetype.c.i
 
 src/truetype/truetype.s: src/truetype/truetype.c.s
@@ -1142,7 +1142,7 @@ src/truetype/truetype.s: src/truetype/truetype.c.s
 
 # target to generate assembly for a file
 src/truetype/truetype.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/truetype/truetype.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/truetype/truetype.c.s
 .PHONY : src/truetype/truetype.c.s
 
 src/type1/type1.obj: src/type1/type1.c.obj
@@ -1150,7 +1150,7 @@ src/type1/type1.obj: src/type1/type1.c.obj
 
 # target to build an object file
 src/type1/type1.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/type1/type1.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/type1/type1.c.obj
 .PHONY : src/type1/type1.c.obj
 
 src/type1/type1.i: src/type1/type1.c.i
@@ -1158,7 +1158,7 @@ src/type1/type1.i: src/type1/type1.c.i
 
 # target to preprocess a source file
 src/type1/type1.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/type1/type1.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/type1/type1.c.i
 .PHONY : src/type1/type1.c.i
 
 src/type1/type1.s: src/type1/type1.c.s
@@ -1166,7 +1166,7 @@ src/type1/type1.s: src/type1/type1.c.s
 
 # target to generate assembly for a file
 src/type1/type1.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/type1/type1.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/type1/type1.c.s
 .PHONY : src/type1/type1.c.s
 
 src/type42/type42.obj: src/type42/type42.c.obj
@@ -1174,7 +1174,7 @@ src/type42/type42.obj: src/type42/type42.c.obj
 
 # target to build an object file
 src/type42/type42.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/type42/type42.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/type42/type42.c.obj
 .PHONY : src/type42/type42.c.obj
 
 src/type42/type42.i: src/type42/type42.c.i
@@ -1182,7 +1182,7 @@ src/type42/type42.i: src/type42/type42.c.i
 
 # target to preprocess a source file
 src/type42/type42.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/type42/type42.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/type42/type42.c.i
 .PHONY : src/type42/type42.c.i
 
 src/type42/type42.s: src/type42/type42.c.s
@@ -1190,7 +1190,7 @@ src/type42/type42.s: src/type42/type42.c.s
 
 # target to generate assembly for a file
 src/type42/type42.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/type42/type42.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/type42/type42.c.s
 .PHONY : src/type42/type42.c.s
 
 src/winfonts/winfnt.obj: src/winfonts/winfnt.c.obj
@@ -1198,7 +1198,7 @@ src/winfonts/winfnt.obj: src/winfonts/winfnt.c.obj
 
 # target to build an object file
 src/winfonts/winfnt.c.obj:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/winfonts/winfnt.c.obj
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/winfonts/winfnt.c.obj
 .PHONY : src/winfonts/winfnt.c.obj
 
 src/winfonts/winfnt.i: src/winfonts/winfnt.c.i
@@ -1206,7 +1206,7 @@ src/winfonts/winfnt.i: src/winfonts/winfnt.c.i
 
 # target to preprocess a source file
 src/winfonts/winfnt.c.i:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/winfonts/winfnt.c.i
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/winfonts/winfnt.c.i
 .PHONY : src/winfonts/winfnt.c.i
 
 src/winfonts/winfnt.s: src/winfonts/winfnt.c.s
@@ -1214,7 +1214,7 @@ src/winfonts/winfnt.s: src/winfonts/winfnt.c.s
 
 # target to generate assembly for a file
 src/winfonts/winfnt.c.s:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/winfonts/winfnt.c.s
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/src/winfonts/winfnt.c.s
 .PHONY : src/winfonts/winfnt.c.s
 
 # Help Target
@@ -1371,6 +1371,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\pichau\Documents\GitHub\FCGFraKk2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -159,7 +159,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/pichau/Documents/GitHub/FCGFraKk/build"
+			"value" : "c:/Users/pichau/Documents/GitHub/FCGFraKk2/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -259,10 +259,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/msys64/ucrt64/bin/g++.exe"
 		},
 		{
@@ -403,10 +403,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/msys64/ucrt64/bin/gcc.exe"
 		},
 		{
@@ -691,7 +691,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -775,7 +775,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk"
+			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk2"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1799,7 +1799,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk/build"
+			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk2/build"
 		},
 		{
 			"name" : "FCG2025-1_IS_TOP_LEVEL",
@@ -1823,7 +1823,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk"
+			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk2"
 		},
 		{
 			"name" : "FETCHCONTENT_BASE_DIR",
@@ -1835,7 +1835,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk/build/_deps"
+			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/_deps"
 		},
 		{
 			"name" : "FETCHCONTENT_FULLY_DISCONNECTED",
@@ -2175,7 +2175,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk/build/_deps/glfw-build"
+			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/_deps/glfw-build"
 		},
 		{
 			"name" : "GLFW_BUILD_DOCS",
@@ -2295,7 +2295,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk/build/_deps/glfw-src"
+			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/_deps/glfw-src"
 		},
 		{
 			"name" : "GLFW_USE_HYBRID_HPG",
@@ -3791,7 +3791,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk/build/_deps/freetype-build"
+			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/_deps/freetype-build"
 		},
 		{
 			"name" : "freetype_IS_TOP_LEVEL",
@@ -3827,7 +3827,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk/build/_deps/freetype-src"
+			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/_deps/freetype-src"
 		},
 		{
 			"name" : "glm_BINARY_DIR",
@@ -3839,7 +3839,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk/build/_deps/glm-build"
+			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/_deps/glm-build"
 		},
 		{
 			"name" : "glm_IS_TOP_LEVEL",
@@ -3863,7 +3863,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk/build/_deps/glm-src"
+			"value" : "C:/Users/pichau/Documents/GitHub/FCGFraKk2/build/_deps/glm-src"
 		},
 		{
 			"name" : "pkgcfg_lib_PC_BZIP2_bz2",

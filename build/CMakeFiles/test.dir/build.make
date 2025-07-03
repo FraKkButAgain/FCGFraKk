@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk
+CMAKE_SOURCE_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk\build
+CMAKE_BINARY_DIR = C:\Users\pichau\Documents\GitHub\FCGFraKk2\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test.dir/depend.make
@@ -73,33 +73,33 @@ CMakeFiles/test.dir/codegen:
 
 CMakeFiles/test.dir/src/test.cpp.obj: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/test.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
-CMakeFiles/test.dir/src/test.cpp.obj: C:/Users/pichau/Documents/GitHub/FCGFraKk/src/test.cpp
+CMakeFiles/test.dir/src/test.cpp.obj: C:/Users/pichau/Documents/GitHub/FCGFraKk2/src/test.cpp
 CMakeFiles/test.dir/src/test.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/test.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/test.cpp.obj -MF CMakeFiles\test.dir\src\test.cpp.obj.d -o CMakeFiles\test.dir\src\test.cpp.obj -c C:\Users\pichau\Documents\GitHub\FCGFraKk\src\test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/test.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/test.cpp.obj -MF CMakeFiles\test.dir\src\test.cpp.obj.d -o CMakeFiles\test.dir\src\test.cpp.obj -c C:\Users\pichau\Documents\GitHub\FCGFraKk2\src\test.cpp
 
 CMakeFiles/test.dir/src/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/src/test.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\pichau\Documents\GitHub\FCGFraKk\src\test.cpp > CMakeFiles\test.dir\src\test.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\pichau\Documents\GitHub\FCGFraKk2\src\test.cpp > CMakeFiles\test.dir\src\test.cpp.i
 
 CMakeFiles/test.dir/src/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/test.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\pichau\Documents\GitHub\FCGFraKk\src\test.cpp -o CMakeFiles\test.dir\src\test.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\pichau\Documents\GitHub\FCGFraKk2\src\test.cpp -o CMakeFiles\test.dir\src\test.cpp.s
 
 CMakeFiles/test.dir/common/glad.c.obj: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/common/glad.c.obj: CMakeFiles/test.dir/includes_C.rsp
-CMakeFiles/test.dir/common/glad.c.obj: C:/Users/pichau/Documents/GitHub/FCGFraKk/common/glad.c
+CMakeFiles/test.dir/common/glad.c.obj: C:/Users/pichau/Documents/GitHub/FCGFraKk2/common/glad.c
 CMakeFiles/test.dir/common/glad.c.obj: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/test.dir/common/glad.c.obj"
-	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test.dir/common/glad.c.obj -MF CMakeFiles\test.dir\common\glad.c.obj.d -o CMakeFiles\test.dir\common\glad.c.obj -c C:\Users\pichau\Documents\GitHub\FCGFraKk\common\glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/test.dir/common/glad.c.obj"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test.dir/common/glad.c.obj -MF CMakeFiles\test.dir\common\glad.c.obj.d -o CMakeFiles\test.dir\common\glad.c.obj -c C:\Users\pichau\Documents\GitHub\FCGFraKk2\common\glad.c
 
 CMakeFiles/test.dir/common/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test.dir/common/glad.c.i"
-	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\pichau\Documents\GitHub\FCGFraKk\common\glad.c > CMakeFiles\test.dir\common\glad.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\pichau\Documents\GitHub\FCGFraKk2\common\glad.c > CMakeFiles\test.dir\common\glad.c.i
 
 CMakeFiles/test.dir/common/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test.dir/common/glad.c.s"
-	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\pichau\Documents\GitHub\FCGFraKk\common\glad.c -o CMakeFiles\test.dir\common\glad.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\pichau\Documents\GitHub\FCGFraKk2\common\glad.c -o CMakeFiles\test.dir\common\glad.c.s
 
 # Object files for target test
 test_OBJECTS = \
@@ -120,7 +120,7 @@ test.exe: C:/msys64/ucrt64/lib/libbz2.dll.a
 test.exe: CMakeFiles/test.dir/linkLibs.rsp
 test.exe: CMakeFiles/test.dir/objects1.rsp
 test.exe: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\test.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -132,6 +132,6 @@ CMakeFiles/test.dir/clean:
 .PHONY : CMakeFiles/test.dir/clean
 
 CMakeFiles/test.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\pichau\Documents\GitHub\FCGFraKk C:\Users\pichau\Documents\GitHub\FCGFraKk C:\Users\pichau\Documents\GitHub\FCGFraKk\build C:\Users\pichau\Documents\GitHub\FCGFraKk\build C:\Users\pichau\Documents\GitHub\FCGFraKk\build\CMakeFiles\test.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\pichau\Documents\GitHub\FCGFraKk2 C:\Users\pichau\Documents\GitHub\FCGFraKk2 C:\Users\pichau\Documents\GitHub\FCGFraKk2\build C:\Users\pichau\Documents\GitHub\FCGFraKk2\build C:\Users\pichau\Documents\GitHub\FCGFraKk2\build\CMakeFiles\test.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/test.dir/depend
 
