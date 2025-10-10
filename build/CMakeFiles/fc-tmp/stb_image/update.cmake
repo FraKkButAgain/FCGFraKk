@@ -4,6 +4,6 @@ message(VERBOSE "Executing update step for stb_image")
 
 block(SCOPE_FOR VARIABLES)
 
-include("C:/Users/FraKk/Documents/Fundamentos_de_computacao/FCGFraKk/build/CMakeFiles/fc-tmp/stb_image/stb_image-gitupdate.cmake")
+include("C:/Users/FraKk/Documents/Fundamentos_de_computacao/CGRFraKk/build/CMakeFiles/fc-tmp/stb_image/stb_image-gitupdate.cmake")
 
 endblock()

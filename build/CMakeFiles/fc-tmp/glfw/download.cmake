@@ -4,6 +4,6 @@ message(VERBOSE "Executing download step for glfw")
 
 block(SCOPE_FOR VARIABLES)
 
-include("C:/Users/FraKk/Documents/Fundamentos_de_computacao/FCGFraKk/build/CMakeFiles/fc-tmp/glfw/glfw-gitclone.cmake")
+include("C:/Users/FraKk/Documents/Fundamentos_de_computacao/CGRFraKk/build/CMakeFiles/fc-tmp/glfw/glfw-gitclone.cmake")
 
 endblock()

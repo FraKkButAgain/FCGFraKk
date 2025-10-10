@@ -4,6 +4,6 @@ message(VERBOSE "Executing download step for glm")
 
 block(SCOPE_FOR VARIABLES)
 
-include("C:/Users/FraKk/Documents/Fundamentos_de_computacao/FCGFraKk/build/CMakeFiles/fc-tmp/glm/glm-gitclone.cmake")
+include("C:/Users/FraKk/Documents/Fundamentos_de_computacao/CGRFraKk/build/CMakeFiles/fc-tmp/glm/glm-gitclone.cmake")
 
 endblock()

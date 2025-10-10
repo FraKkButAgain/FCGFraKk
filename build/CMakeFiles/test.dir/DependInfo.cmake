@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/FraKk/Documents/Fundamentos_de_computacao/FCGFraKk/common/glad.c" "CMakeFiles/test.dir/common/glad.c.obj" "gcc" "CMakeFiles/test.dir/common/glad.c.obj.d"
-  "C:/Users/FraKk/Documents/Fundamentos_de_computacao/FCGFraKk/src/test.cpp" "CMakeFiles/test.dir/src/test.cpp.obj" "gcc" "CMakeFiles/test.dir/src/test.cpp.obj.d"
+  "C:/Users/FraKk/Documents/Fundamentos_de_computacao/CGRFraKk/common/glad.c" "CMakeFiles/test.dir/common/glad.c.obj" "gcc" "CMakeFiles/test.dir/common/glad.c.obj.d"
+  "C:/Users/FraKk/Documents/Fundamentos_de_computacao/CGRFraKk/src/test.cpp" "CMakeFiles/test.dir/src/test.cpp.obj" "gcc" "CMakeFiles/test.dir/src/test.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

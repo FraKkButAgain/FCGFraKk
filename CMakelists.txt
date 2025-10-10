@@ -48,17 +48,7 @@ include_directories(${stb_image_SOURCE_DIR})
 # Lista de exemplos/exercícios podem ser colocados aqui também
 set(EXERCISES
     test
-    lista1/ex6-a
-    lista1/ex6-b
-    lista1/ex6-c
-    lista1/ex6-d
-    lista1/ex7-a
-    lista1/ex7-b
-    lista1/ex7-c
-    lista1/ex7-d
-    lista1/ex8
-    lista1/ex9
-    lista1/ex10
+
 )
 
 add_compile_options(-Wno-pragmas)
